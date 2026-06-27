@@ -1,6 +1,5 @@
 # Replicating and Auditing LLM Seismic Intensity Models: Behavioral Multi-Agent Simulation & Density Bias Evaluation (Text-Only)
 
----
 
 ## 1. Executive Summary
 
@@ -21,7 +20,6 @@ We will construct a modular Python pipeline that:
 * Employs an **LLM-as-Judge** to aggregate these reports into a final consensus score per ZIP code.
 * Performs statistical correlation and residual mapping to identify systematic rural/urban prediction biases.
 
----
 
 ## 2. The Core EMNLP 2025 Framework (Baseline)
 
@@ -32,7 +30,6 @@ The baseline framework (Li et al., EMNLP 2025) operates on the premise that LLMs
 * **Original EMNLP '25 Multimodal Framework:** Ingests seismic ShakeMap parameters (PGA, PGV), building structural characteristics (OpenStreetMap), soil properties (Vs30 shear velocity), Census data, and **Google Street View static imagery**. The visual images are passed directly to a Vision-Language Model to evaluate the structural integrity and density of the built environment.
 * **Our Adapted Text-Only Framework:** We ablate the visual imagery and focus entirely on the text-based data streams. This eliminates the need for a Google Maps API Key or billing setup. To compensate for the loss of visual density indicators, we use **explicit population density statistics** extracted from the Census and feed them directly into the text prompts, allowing us to evaluate if text-only LLMs can achieve comparable predictive accuracy.
 
----
 
 ## 3. Value-Added Enhancements: What We Are Doing New
 
@@ -49,7 +46,6 @@ The EMNLP '25 baseline treats communities as uniform, mathematical blocks by fee
 | **Aggregation Method** | Direct single-inference output | **LLM-as-Judge** consolidates diverse persona testimonies |
 | **Bias Auditing** | None (Evaluated overall correlation averages) | **Systemic Density-Bias Auditing** (Urban vs. Rural) |
 
----
 
 ## 4. Statistical & Behavioral Quantification Metrics
 
@@ -69,7 +65,6 @@ We will quantify the behavioral simulations using five distinct mathematical and
    * Simple mathematical mean of personas ($\mu_{\text{MMI}}$).
    * LLM-as-Judge consolidated MMI ($MMI_{\text{Judge}}$).
 
----
 
 ## 5. Findings, Results & EMNLP 2025 Comparison
 
@@ -140,7 +135,6 @@ Below is the residual trend visualization:
 * **Baseline Slope ($\beta_1 = -0.06834$):** Supports our core hypothesis. The negative slope shows that the baseline model slightly **over-predicts** intensity in rural (low density) areas and **under-predicts** in urban (high density) areas.
 * **Persona and Judge Slopes:** Interestingly, when demographic personas were introduced, the slopes became positive. The persona averaging and judge consolidation tended to inflate ratings globally, changing the spatial bias characteristics.
 
----
 
 ## 6. How It Helps Us
 
@@ -148,7 +142,6 @@ Below is the residual trend visualization:
 1. **Algorithmic Auditing for Disaster Response:** As government agencies transition to using AI for post-event crisis simulation, identifying systematic biases is vital. If an LLM over-predicts rural damage and under-predicts urban damage, emergency services will misallocate rescue supplies and personnel. Our findings provide a framework to audit and correct these spatial biases.
 2. **Understanding LLM Social Aggregation:** This project helps us understand how LLMs act as consolidators. Does an LLM-as-Judge prioritize the most vulnerable/anxious voices (safe aggregation), or does it average out anomalies? This has broad applications for LLM decision-making systems in policy and governance.
 
----
 
 ## 7. Conclusion
 
