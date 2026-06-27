@@ -15,9 +15,9 @@ Our aim is twofold:
 ### How to Build It
 We will construct a modular Python pipeline that:
 * Connects to the **USGS Catalog API** to pull event parameters (epicenter, magnitude, depth) and the official **USGS DYFI Portal** to download ZIP-level ground-truth MMI reports.
-* Connects to the **U.S. Census Bureau API** to extract socioeconomic demographics (income, education, age) for ZIP codes within 100 km of the epicenter.
-* Programmatically instantiates 3–5 representative demographic personas for each ZIP code.
-* Queries OpenAI's GPT-4o-mini/GPT-4o to generate individual MMI reports and qualitative justifications for each persona.
+* Connects to the **U.S. Census Bureau API** to extract socioeconomic demographics (income, education, age) for ZIP codes within 200 km of the epicenter.
+* Programmatically instantiates 3 representative demographic personas for each ZIP code.
+* Queries a local instance of the **Qwen3-VL-4B-Instruct-GGUF** model via `llama.cpp` to generate individual MMI reports and qualitative justifications for each persona.
 * Employs an **LLM-as-Judge** to aggregate these reports into a final consensus score per ZIP code.
 * Performs statistical correlation and residual mapping to identify systematic rural/urban prediction biases.
 
@@ -71,33 +71,9 @@ We will quantify the behavioral simulations using five distinct mathematical and
 
 ---
 
-## 5. Expected Results & Behavioral Patterns
+## 5. Findings, Results & EMNLP 2025 Comparison
 
-Based on geophysical and behavioral principles, we anticipate the following results:
-
-### A. Model Performance & Ablations
-* **Replication Target:** We expect the Single-Prompt Text-Only baseline to achieve a Pearson correlation of $r \approx 0.75 - 0.78$ with USGS ground-truth. (This represents a minor $0.10$ drop from the original paper's multimodal $0.88$ score due to the absence of street-view images).
-* **Persona Improvement:** The simple mathematical average of the personas ($\mu_{\text{MMI}}$) is expected to outperform the Single LLM baseline by $0.03 - 0.05$ in correlation, as aggregating multiple viewpoints reduces individual prompt variance.
-* **Judge Superiority:** The **LLM-as-Judge** MMI is expected to yield the highest correlation ($r \approx 0.82$) and the lowest RMSE, proving that qualitative reasoning over community reports results in more accurate regional assessments than simple mathematical averaging.
-
-### B. The Density-Bias Pattern (Our Core Hypothesis)
-When we plot the prediction residuals ($\text{Predicted MMI} - \text{Actual MMI}$) against **log population density**, we expect a clear systematic trend:
-* **Rural Areas (Low Density):** GPT-4o will systematically **over-predict** MMI (positive residual). The model will assume that because the shaking was physically strong, significant damage must have occurred, failing to account for the sparser built environment.
-* **Urban Areas (High Density):** GPT-4o will systematically **under-predict** MMI (negative residual). The model will fail to account for complex urban building dynamics (e.g., masonry quality, high-rise amplification, utility damage cascading) that increase human-perceived MMI reports.
-
----
-
-## 6. How It Helps Us
-
-### How It Helps Us
-1. **Algorithmic Auditing for Disaster Response:** As government agencies transition to using AI for post-event crisis simulation, identifying systematic biases is vital. If an LLM over-predicts rural damage and under-predicts urban damage, emergency services will misallocate rescue supplies and personnel. Our findings provide a framework to audit and correct these spatial biases.
-2. **Understanding LLM Social Aggregation:** This project helps us understand how LLMs act as consolidators. Does an LLM-as-Judge prioritize the most vulnerable/anxious voices (safe aggregation), or does it average out anomalies? This has broad applications for LLM decision-making systems in policy and governance.
-
----
-
-## 7. Findings & Results
-
-We executed the full pipeline on a deterministic sample of **50 ZIP codes** (ZCTAs) from the 2019 Ridgecrest Earthquake (M 7.1), using the local **Qwen3-VL-4B** model for persona generation and judge consolidation.
+We executed the full pipeline on a deterministic sample of **50 ZIP codes** (ZCTAs) from the 2019 Ridgecrest Earthquake (M 7.1), running the quantized **Qwen3-VL-4B** model locally on a laptop CPU.
 
 ### A. Ground-Truth Alignment & Model Performance
 
@@ -113,7 +89,24 @@ The table below summarizes the alignment (Pearson correlation $r$ and RMSE) of t
 > **Key Finding (Lack of Physical Grounding & Cognitive Anchoring):**
 > All configurations achieved near-zero or negative correlation with the ground truth. Because the model is small (4B parameters), it suffered from severe **mode collapse**. It repeatedly predicted nearly constant MMI scores (e.g., Vulnerable = 6.0/7.0, Average = 6.0, Resilient = 5.0) regardless of the actual physical distance of the ZIP code from the epicenter (which ranged from 30 km to 200 km).
 
-### B. Behavioral & Cognitive Quantifications
+### B. Comparison with EMNLP 2025 Baseline
+
+The original EMNLP 2025 paper (Li et al.) reported a high Pearson correlation ($r = 0.88$) by utilizing a large multimodal cloud model (GPT-4/GPT-4V) with Google Street View static imagery and retrieval augmentation. In contrast, our text-only local replication using Qwen3-VL-4B yielded significantly lower, near-zero/negative correlations ($r = -0.18$ for the baseline, $r = 0.007$ for the Judge).
+
+Here is the comparative breakdown of the two approaches:
+
+| Dimension / Feature | EMNLP 2025 Original | Our Replication & Audit |
+| :--- | :--- | :--- |
+| **Model Used** | Large-scale Multimodal Cloud LLM (GPT-4) | Local quantized CPU LLM (Qwen3-VL-4B-Instruct-GGUF) |
+| **Visual Inputs** | Google Street View static images (for density/structural analysis) | Ablated (Text-only demographic & distance inputs) |
+| **Retrieval Augmentation** | Augmented with historic seismic event context | Zero-shot direct inference |
+| **Accuracy ($r$)** | High alignment ($r = 0.88$) | Low alignment ($r = -0.18$ to $0.09$) |
+| **Cognitive Invariance** | Dynamic and sensitive to physical parameters | High mode collapse (anchored to constant values) |
+| **Density Bias Audited** | Not evaluated | Yes (Confirmed baseline overprediction in rural areas) |
+
+This comparison highlights the **performance envelope** of small local models. While a large cloud-hosted multimodal LLM can act as a reliable "virtual sensor" for physical hazards, a small 4B local model on CPU is not physically grounded enough to predict continuous geographic variations. Instead of evaluating physical decay (distance), it substitutes simplistic demographic rules (vulnerable = high MMI, resilient = low MMI), which explains why the correlations collapsed.
+
+### C. Behavioral & Cognitive Quantifications
 
 Our five mathematical behavioral metrics revealed strong cognitive biases inside the simulation:
 
@@ -126,7 +119,7 @@ Our five mathematical behavioral metrics revealed strong cognitive biases inside
   > [!NOTE]
   > The positive aggregation bias indicates a **Pessimism/Hazard Inflation Bias** in the LLM-as-Judge consolidation. The Judge systematically overpredicted shaking compared to the mathematical average of the residents.
 
-### C. Population Density Spatial Audit (Density Bias)
+### D. Population Density Spatial Audit (Density Bias)
 
 We ran a linear regression of the MMI prediction residuals ($\text{Predicted MMI} - \text{Actual MMI}$) against $\log_{10}$ population density:
 
@@ -149,7 +142,15 @@ Below is the residual trend visualization:
 
 ---
 
-## 8. Conclusion
+## 6. How It Helps Us
+
+### How It Helps Us
+1. **Algorithmic Auditing for Disaster Response:** As government agencies transition to using AI for post-event crisis simulation, identifying systematic biases is vital. If an LLM over-predicts rural damage and under-predicts urban damage, emergency services will misallocate rescue supplies and personnel. Our findings provide a framework to audit and correct these spatial biases.
+2. **Understanding LLM Social Aggregation:** This project helps us understand how LLMs act as consolidators. Does an LLM-as-Judge prioritize the most vulnerable/anxious voices (safe aggregation), or does it average out anomalies? This has broad applications for LLM decision-making systems in policy and governance.
+
+---
+
+## 7. Conclusion
 
 Based on our empirical evaluation of the Qwen3-VL-4B simulation, we conclude:
 1. **Capacity Limits of Small LLMs:** Quantized local models (4B parameters) suffer from severe mode collapse. They struggle to incorporate physical distance decay into their predictions, defaulting to static numbers.
