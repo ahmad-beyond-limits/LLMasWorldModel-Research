@@ -130,7 +130,8 @@ The regression parameters are summarized below:
 
 Below is the residual trend visualization:
 
-![MMI Prediction Residuals vs. Population Density](results/density_bias_analysis.png)
+<img width="1500" height="900" alt="density_bias_analysis" src="https://github.com/user-attachments/assets/479019d5-ece0-476b-a0fd-e801c4c1669f" />
+
 
 * **Baseline Slope ($\beta_1 = -0.06834$):** Supports our core hypothesis. The negative slope shows that the baseline model slightly **over-predicts** intensity in rural (low density) areas and **under-predicts** in urban (high density) areas.
 * **Persona and Judge Slopes:** Interestingly, when demographic personas were introduced, the slopes became positive. The persona averaging and judge consolidation tended to inflate ratings globally, changing the spatial bias characteristics.
