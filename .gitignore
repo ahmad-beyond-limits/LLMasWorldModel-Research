@@ -1,0 +1,8 @@
+.env
+experiemnt.md
+experiment.md
+.venv/
+__pycache__/
+*.pyc
+data/simulation_results.json
+results/

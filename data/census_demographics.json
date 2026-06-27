@@ -1,0 +1,352 @@
+{
+    "93307": {
+        "population": 86832,
+        "median_income": 38415.0,
+        "college_educated_pct": 5.57,
+        "land_area_km2": 359.73,
+        "population_density": 241.38
+    },
+    "93552": {
+        "population": 39905,
+        "median_income": 65728.0,
+        "college_educated_pct": 11.36,
+        "land_area_km2": 125.54,
+        "population_density": 317.86
+    },
+    "93560": {
+        "population": 21756,
+        "median_income": 60743.0,
+        "college_educated_pct": 17.68,
+        "land_area_km2": 412.93,
+        "population_density": 52.69
+    },
+    "90057": {
+        "population": 50152,
+        "median_income": 37700.0,
+        "college_educated_pct": 20.22,
+        "land_area_km2": 2.29,
+        "population_density": 21865.1
+    },
+    "91403": {
+        "population": 25156,
+        "median_income": 104802.0,
+        "college_educated_pct": 63.71,
+        "land_area_km2": 9.4,
+        "population_density": 2675.02
+    },
+    "91754": {
+        "population": 33636,
+        "median_income": 63909.0,
+        "college_educated_pct": 34.88,
+        "land_area_km2": 11.74,
+        "population_density": 2863.89
+    },
+    "91763": {
+        "population": 38863,
+        "median_income": 62386.0,
+        "college_educated_pct": 16.31,
+        "land_area_km2": 13.41,
+        "population_density": 2897.71
+    },
+    "91325": {
+        "population": 34575,
+        "median_income": 71400.0,
+        "college_educated_pct": 39.01,
+        "land_area_km2": 12.5,
+        "population_density": 2766.74
+    },
+    "91356": {
+        "population": 29822,
+        "median_income": 76929.0,
+        "college_educated_pct": 49.26,
+        "land_area_km2": 19.0,
+        "population_density": 1569.89
+    },
+    "91605": {
+        "population": 53113,
+        "median_income": 50623.0,
+        "college_educated_pct": 18.86,
+        "land_area_km2": 14.15,
+        "population_density": 3752.97
+    },
+    "91762": {
+        "population": 61718,
+        "median_income": 60293.0,
+        "college_educated_pct": 16.29,
+        "land_area_km2": 35.33,
+        "population_density": 1746.98
+    },
+    "91504": {
+        "population": 26749,
+        "median_income": 83994.0,
+        "college_educated_pct": 43.3,
+        "land_area_km2": 12.78,
+        "population_density": 2092.5
+    },
+    "92509": {
+        "population": 81383,
+        "median_income": 68210.0,
+        "college_educated_pct": 11.86,
+        "land_area_km2": 80.57,
+        "population_density": 1010.05
+    },
+    "93015": {
+        "population": 17989,
+        "median_income": 76334.0,
+        "college_educated_pct": 16.27,
+        "land_area_km2": 198.3,
+        "population_density": 90.72
+    },
+    "93305": {
+        "population": 37902,
+        "median_income": 31471.0,
+        "college_educated_pct": 7.07,
+        "land_area_km2": 15.37,
+        "population_density": 2465.9
+    },
+    "93313": {
+        "population": 55221,
+        "median_income": 75162.0,
+        "college_educated_pct": 15.44,
+        "land_area_km2": 258.19,
+        "population_density": 213.88
+    },
+    "92310": {
+        "population": 9872,
+        "median_income": 54787.0,
+        "college_educated_pct": 31.98,
+        "land_area_km2": 7.75,
+        "population_density": 1273.53
+    },
+    "90027": {
+        "population": 44770,
+        "median_income": 66947.0,
+        "college_educated_pct": 54.65,
+        "land_area_km2": 21.07,
+        "population_density": 2125.11
+    },
+    "93534": {
+        "population": 39367,
+        "median_income": 41537.0,
+        "college_educated_pct": 16.45,
+        "land_area_km2": 46.05,
+        "population_density": 854.92
+    },
+    "93268": {
+        "population": 18731,
+        "median_income": 39517.0,
+        "college_educated_pct": 8.31,
+        "land_area_km2": 108.7,
+        "population_density": 172.32
+    },
+    "93271": {
+        "population": 2479,
+        "median_income": 72188.0,
+        "college_educated_pct": 50.66,
+        "land_area_km2": 983.23,
+        "population_density": 2.52
+    },
+    "91354": {
+        "population": 32544,
+        "median_income": 128308.0,
+        "college_educated_pct": 52.78,
+        "land_area_km2": 22.6,
+        "population_density": 1440.11
+    },
+    "91010": {
+        "population": 26380,
+        "median_income": 74738.0,
+        "college_educated_pct": 27.47,
+        "land_area_km2": 18.23,
+        "population_density": 1446.7
+    },
+    "92365": {
+        "population": 2733,
+        "median_income": 53300.0,
+        "college_educated_pct": 13.11,
+        "land_area_km2": 447.18,
+        "population_density": 6.11
+    },
+    "92501": {
+        "population": 21590,
+        "median_income": 61630.0,
+        "college_educated_pct": 21.24,
+        "land_area_km2": 14.75,
+        "population_density": 1463.57
+    },
+    "91730": {
+        "population": 72407,
+        "median_income": 72995.0,
+        "college_educated_pct": 28.98,
+        "land_area_km2": 37.51,
+        "population_density": 1930.49
+    },
+    "91764": {
+        "population": 56677,
+        "median_income": 61501.0,
+        "college_educated_pct": 16.08,
+        "land_area_km2": 20.82,
+        "population_density": 2722.44
+    },
+    "91206": {
+        "population": 34739,
+        "median_income": 70141.0,
+        "college_educated_pct": 41.89,
+        "land_area_km2": 15.23,
+        "population_density": 2280.33
+    },
+    "91321": {
+        "population": 34014,
+        "median_income": 73187.0,
+        "college_educated_pct": 25.35,
+        "land_area_km2": 67.04,
+        "population_density": 507.37
+    },
+    "91350": {
+        "population": 36173,
+        "median_income": 117707.0,
+        "college_educated_pct": 37.48,
+        "land_area_km2": 43.9,
+        "population_density": 823.98
+    },
+    "91801": {
+        "population": 54768,
+        "median_income": 60519.0,
+        "college_educated_pct": 37.69,
+        "land_area_km2": 11.29,
+        "population_density": 4852.4
+    },
+    "91789": {
+        "population": 44440,
+        "median_income": 101841.0,
+        "college_educated_pct": 50.98,
+        "land_area_km2": 40.49,
+        "population_density": 1097.67
+    },
+    "91770": {
+        "population": 62703,
+        "median_income": 59776.0,
+        "college_educated_pct": 20.59,
+        "land_area_km2": 16.64,
+        "population_density": 3769.13
+    },
+    "93265": {
+        "population": 3379,
+        "median_income": 52174.0,
+        "college_educated_pct": 33.14,
+        "land_area_km2": 968.78,
+        "population_density": 3.49
+    },
+    "93311": {
+        "population": 45481,
+        "median_income": 98130.0,
+        "college_educated_pct": 38.16,
+        "land_area_km2": 438.94,
+        "population_density": 103.62
+    },
+    "93286": {
+        "population": 9906,
+        "median_income": 42882.0,
+        "college_educated_pct": 12.95,
+        "land_area_km2": 221.28,
+        "population_density": 44.77
+    },
+    "93312": {
+        "population": 61628,
+        "median_income": 97671.0,
+        "college_educated_pct": 32.27,
+        "land_area_km2": 39.4,
+        "population_density": 1564.13
+    },
+    "93555": {
+        "population": 33833,
+        "median_income": 68794.0,
+        "college_educated_pct": 28.37,
+        "land_area_km2": 211.28,
+        "population_density": 160.13
+    },
+    "93021": {
+        "population": 38581,
+        "median_income": 107363.0,
+        "college_educated_pct": 43.71,
+        "land_area_km2": 121.77,
+        "population_density": 316.84
+    },
+    "92376": {
+        "population": 86085,
+        "median_income": 56013.0,
+        "college_educated_pct": 9.41,
+        "land_area_km2": 35.06,
+        "population_density": 2455.19
+    },
+    "92404": {
+        "population": 62915,
+        "median_income": 46770.0,
+        "college_educated_pct": 10.47,
+        "land_area_km2": 74.03,
+        "population_density": 849.9
+    },
+    "91381": {
+        "population": 19390,
+        "median_income": 135357.0,
+        "college_educated_pct": 53.99,
+        "land_area_km2": 97.42,
+        "population_density": 199.03
+    },
+    "91701": {
+        "population": 39461,
+        "median_income": 100923.0,
+        "college_educated_pct": 34.54,
+        "land_area_km2": 18.88,
+        "population_density": 2090.09
+    },
+    "91784": {
+        "population": 26090,
+        "median_income": 130421.0,
+        "college_educated_pct": 46.58,
+        "land_area_km2": 23.85,
+        "population_density": 1094.03
+    },
+    "91343": {
+        "population": 66743,
+        "median_income": 66661.0,
+        "college_educated_pct": 26.63,
+        "land_area_km2": 15.31,
+        "population_density": 4359.41
+    },
+    "91105": {
+        "population": 12617,
+        "median_income": 131158.0,
+        "college_educated_pct": 69.37,
+        "land_area_km2": 9.56,
+        "population_density": 1319.5
+    },
+    "91024": {
+        "population": 10932,
+        "median_income": 100988.0,
+        "college_educated_pct": 60.77,
+        "land_area_km2": 7.64,
+        "population_density": 1430.28
+    },
+    "91710": {
+        "population": 91773,
+        "median_income": 81892.0,
+        "college_educated_pct": 22.56,
+        "land_area_km2": 55.76,
+        "population_density": 1645.72
+    },
+    "91711": {
+        "population": 36777,
+        "median_income": 101270.0,
+        "college_educated_pct": 56.37,
+        "land_area_km2": 38.85,
+        "population_density": 946.62
+    },
+    "89061": {
+        "population": 6160,
+        "median_income": 57189.0,
+        "college_educated_pct": 16.17,
+        "land_area_km2": 188.32,
+        "population_density": 32.71
+    }
+}

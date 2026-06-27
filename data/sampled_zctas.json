@@ -1,0 +1,452 @@
+[
+    {
+        "zip": "92376",
+        "actual_mmi": 3.7,
+        "responses": 16,
+        "latitude": 34.1107,
+        "longitude": -117.3802,
+        "distance_km": 185.53,
+        "state": "CA"
+    },
+    {
+        "zip": "91206",
+        "actual_mmi": 4.5,
+        "responses": 16,
+        "latitude": 34.1607,
+        "longitude": -118.2145,
+        "distance_km": 187.47,
+        "state": "CA"
+    },
+    {
+        "zip": "92310",
+        "actual_mmi": 5.0,
+        "responses": 15,
+        "latitude": 35.3636,
+        "longitude": -116.644,
+        "distance_km": 97.49,
+        "state": "CA"
+    },
+    {
+        "zip": "91801",
+        "actual_mmi": 3.4,
+        "responses": 25,
+        "latitude": 34.0906,
+        "longitude": -118.1282,
+        "distance_km": 192.81,
+        "state": "CA"
+    },
+    {
+        "zip": "91504",
+        "actual_mmi": 4.1,
+        "responses": 26,
+        "latitude": 34.2028,
+        "longitude": -118.3289,
+        "distance_km": 186.46,
+        "state": "CA"
+    },
+    {
+        "zip": "90057",
+        "actual_mmi": 4.2,
+        "responses": 17,
+        "latitude": 34.0622,
+        "longitude": -118.2774,
+        "distance_km": 199.65,
+        "state": "CA"
+    },
+    {
+        "zip": "93015",
+        "actual_mmi": 4.2,
+        "responses": 12,
+        "latitude": 34.4167,
+        "longitude": -118.8457,
+        "distance_km": 188.37,
+        "state": "CA"
+    },
+    {
+        "zip": "91325",
+        "actual_mmi": 4.4,
+        "responses": 19,
+        "latitude": 34.2369,
+        "longitude": -118.5182,
+        "distance_km": 189.86,
+        "state": "CA"
+    },
+    {
+        "zip": "91784",
+        "actual_mmi": 3.5,
+        "responses": 15,
+        "latitude": 34.141,
+        "longitude": -117.6592,
+        "distance_km": 181.16,
+        "state": "CA"
+    },
+    {
+        "zip": "93534",
+        "actual_mmi": 4.6,
+        "responses": 88,
+        "latitude": 34.7202,
+        "longitude": -118.1485,
+        "distance_km": 126.89,
+        "state": "CA"
+    },
+    {
+        "zip": "93307",
+        "actual_mmi": 3.6,
+        "responses": 15,
+        "latitude": 35.2347,
+        "longitude": -118.9155,
+        "distance_km": 133.16,
+        "state": "CA"
+    },
+    {
+        "zip": "92509",
+        "actual_mmi": 3.8,
+        "responses": 20,
+        "latitude": 34.0034,
+        "longitude": -117.4456,
+        "distance_km": 196.88,
+        "state": "CA"
+    },
+    {
+        "zip": "91605",
+        "actual_mmi": 4.6,
+        "responses": 15,
+        "latitude": 34.2067,
+        "longitude": -118.4011,
+        "distance_km": 188.5,
+        "state": "CA"
+    },
+    {
+        "zip": "91764",
+        "actual_mmi": 3.8,
+        "responses": 26,
+        "latitude": 34.0752,
+        "longitude": -117.6025,
+        "distance_km": 188.4,
+        "state": "CA"
+    },
+    {
+        "zip": "91789",
+        "actual_mmi": 3.9,
+        "responses": 13,
+        "latitude": 34.0208,
+        "longitude": -117.8541,
+        "distance_km": 195.83,
+        "state": "CA"
+    },
+    {
+        "zip": "92365",
+        "actual_mmi": 4.9,
+        "responses": 12,
+        "latitude": 34.8639,
+        "longitude": -116.6902,
+        "distance_km": 130.17,
+        "state": "CA"
+    },
+    {
+        "zip": "89061",
+        "actual_mmi": 5.0,
+        "responses": 16,
+        "latitude": 36.1212,
+        "longitude": -115.9291,
+        "distance_km": 155.36,
+        "state": "NV"
+    },
+    {
+        "zip": "93313",
+        "actual_mmi": 4.6,
+        "responses": 26,
+        "latitude": 35.1532,
+        "longitude": -119.048,
+        "distance_km": 148.02,
+        "state": "CA"
+    },
+    {
+        "zip": "93305",
+        "actual_mmi": 4.2,
+        "responses": 16,
+        "latitude": 35.3891,
+        "longitude": -118.9853,
+        "distance_km": 132.28,
+        "state": "CA"
+    },
+    {
+        "zip": "91710",
+        "actual_mmi": 4.2,
+        "responses": 44,
+        "latitude": 34.0041,
+        "longitude": -117.6789,
+        "distance_km": 196.44,
+        "state": "CA"
+    },
+    {
+        "zip": "91754",
+        "actual_mmi": 3.9,
+        "responses": 17,
+        "latitude": 34.0519,
+        "longitude": -118.1459,
+        "distance_km": 197.38,
+        "state": "CA"
+    },
+    {
+        "zip": "93271",
+        "actual_mmi": 3.8,
+        "responses": 15,
+        "latitude": 36.4313,
+        "longitude": -118.7424,
+        "distance_km": 126.34,
+        "state": "CA"
+    },
+    {
+        "zip": "93268",
+        "actual_mmi": 3.2,
+        "responses": 17,
+        "latitude": 35.1718,
+        "longitude": -119.4242,
+        "distance_km": 178.12,
+        "state": "CA"
+    },
+    {
+        "zip": "91105",
+        "actual_mmi": 3.8,
+        "responses": 16,
+        "latitude": 34.1399,
+        "longitude": -118.1682,
+        "distance_km": 188.47,
+        "state": "CA"
+    },
+    {
+        "zip": "91762",
+        "actual_mmi": 4.3,
+        "responses": 16,
+        "latitude": 33.9939,
+        "longitude": -117.6353,
+        "distance_km": 197.46,
+        "state": "CA"
+    },
+    {
+        "zip": "91701",
+        "actual_mmi": 3.7,
+        "responses": 23,
+        "latitude": 34.138,
+        "longitude": -117.6007,
+        "distance_km": 181.41,
+        "state": "CA"
+    },
+    {
+        "zip": "92501",
+        "actual_mmi": 3.5,
+        "responses": 39,
+        "latitude": 33.9953,
+        "longitude": -117.3729,
+        "distance_km": 198.36,
+        "state": "CA"
+    },
+    {
+        "zip": "93311",
+        "actual_mmi": 3.9,
+        "responses": 49,
+        "latitude": 35.1892,
+        "longitude": -119.1813,
+        "distance_km": 157.1,
+        "state": "CA"
+    },
+    {
+        "zip": "91356",
+        "actual_mmi": 4.2,
+        "responses": 20,
+        "latitude": 34.1539,
+        "longitude": -118.5467,
+        "distance_km": 199.31,
+        "state": "CA"
+    },
+    {
+        "zip": "91343",
+        "actual_mmi": 3.9,
+        "responses": 21,
+        "latitude": 34.2384,
+        "longitude": -118.4807,
+        "distance_km": 188.22,
+        "state": "CA"
+    },
+    {
+        "zip": "93312",
+        "actual_mmi": 3.8,
+        "responses": 57,
+        "latitude": 35.3917,
+        "longitude": -119.1196,
+        "distance_km": 143.76,
+        "state": "CA"
+    },
+    {
+        "zip": "91730",
+        "actual_mmi": 4.1,
+        "responses": 66,
+        "latitude": 34.0996,
+        "longitude": -117.5795,
+        "distance_km": 185.69,
+        "state": "CA"
+    },
+    {
+        "zip": "93555",
+        "actual_mmi": 7.1,
+        "responses": 314,
+        "latitude": 35.6917,
+        "longitude": -117.4492,
+        "distance_km": 16.08,
+        "state": "CA"
+    },
+    {
+        "zip": "93560",
+        "actual_mmi": 4.4,
+        "responses": 34,
+        "latitude": 34.9188,
+        "longitude": -118.4976,
+        "distance_km": 124.84,
+        "state": "CA"
+    },
+    {
+        "zip": "91770",
+        "actual_mmi": 3.5,
+        "responses": 16,
+        "latitude": 34.0643,
+        "longitude": -118.0836,
+        "distance_km": 194.68,
+        "state": "CA"
+    },
+    {
+        "zip": "91403",
+        "actual_mmi": 4.0,
+        "responses": 28,
+        "latitude": 34.1467,
+        "longitude": -118.463,
+        "distance_km": 196.86,
+        "state": "CA"
+    },
+    {
+        "zip": "93021",
+        "actual_mmi": 3.7,
+        "responses": 42,
+        "latitude": 34.3089,
+        "longitude": -118.8645,
+        "distance_km": 199.1,
+        "state": "CA"
+    },
+    {
+        "zip": "91354",
+        "actual_mmi": 4.4,
+        "responses": 28,
+        "latitude": 34.4522,
+        "longitude": -118.5527,
+        "distance_km": 170.22,
+        "state": "CA"
+    },
+    {
+        "zip": "91711",
+        "actual_mmi": 3.6,
+        "responses": 58,
+        "latitude": 34.1267,
+        "longitude": -117.7155,
+        "distance_km": 182.98,
+        "state": "CA"
+    },
+    {
+        "zip": "91321",
+        "actual_mmi": 4.0,
+        "responses": 25,
+        "latitude": 34.3579,
+        "longitude": -118.4738,
+        "distance_km": 175.99,
+        "state": "CA"
+    },
+    {
+        "zip": "93286",
+        "actual_mmi": 3.2,
+        "responses": 12,
+        "latitude": 36.531,
+        "longitude": -119.0343,
+        "distance_km": 154.17,
+        "state": "CA"
+    },
+    {
+        "zip": "91763",
+        "actual_mmi": 3.6,
+        "responses": 10,
+        "latitude": 34.0722,
+        "longitude": -117.6984,
+        "distance_km": 188.95,
+        "state": "CA"
+    },
+    {
+        "zip": "90027",
+        "actual_mmi": 4.0,
+        "responses": 55,
+        "latitude": 34.1251,
+        "longitude": -118.2906,
+        "distance_km": 193.4,
+        "state": "CA"
+    },
+    {
+        "zip": "93265",
+        "actual_mmi": 4.6,
+        "responses": 23,
+        "latitude": 36.188,
+        "longitude": -118.6748,
+        "distance_km": 107.38,
+        "state": "CA"
+    },
+    {
+        "zip": "91381",
+        "actual_mmi": 4.0,
+        "responses": 23,
+        "latitude": 34.368,
+        "longitude": -118.6132,
+        "distance_km": 181.1,
+        "state": "CA"
+    },
+    {
+        "zip": "91350",
+        "actual_mmi": 4.0,
+        "responses": 33,
+        "latitude": 34.4257,
+        "longitude": -118.5141,
+        "distance_km": 171.03,
+        "state": "CA"
+    },
+    {
+        "zip": "91024",
+        "actual_mmi": 4.2,
+        "responses": 22,
+        "latitude": 34.1691,
+        "longitude": -118.0499,
+        "distance_km": 182.63,
+        "state": "CA"
+    },
+    {
+        "zip": "93552",
+        "actual_mmi": 4.8,
+        "responses": 16,
+        "latitude": 34.5788,
+        "longitude": -118.0217,
+        "distance_km": 137.85,
+        "state": "CA"
+    },
+    {
+        "zip": "91010",
+        "actual_mmi": 3.9,
+        "responses": 12,
+        "latitude": 34.1399,
+        "longitude": -117.9571,
+        "distance_km": 184.11,
+        "state": "CA"
+    },
+    {
+        "zip": "92404",
+        "actual_mmi": 3.8,
+        "responses": 23,
+        "latitude": 34.1772,
+        "longitude": -117.2742,
+        "distance_km": 179.52,
+        "state": "CA"
+    }
+]
